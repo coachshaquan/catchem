@@ -1,7 +1,3 @@
-
-#Classes - first half of day
-
-#Detecting Input - second half if we get to it
 from sense_hat import SenseHat
 from time import sleep
 import random
