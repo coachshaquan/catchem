@@ -21,7 +21,7 @@ class Berry:
         r  = (255,200,21)
         self.display(r)  #display new pixel
         time.sleep(1)
-        K = (0,0,0)
+        k = (0,0,0)
         self.display(k) #erase last pixel
         self.move()
 
