@@ -59,7 +59,7 @@ class Catcher:
                 self.move(-1) #move left
             elif event.action == "pressed" and event.direction == "right":
                 self.move(1) # move right
-            self.display(r) #make new position visible wherever we've moved
+            self.display(g) #make new position visible wherever we've moved
 
 
 my_berry = Berry()
@@ -70,7 +70,7 @@ while True:
     my_berry.run()
     if my_berry.x_position == my_catcher.x_position and my_berry.y_position == my_catcher.y_position:
         print("score!")
-        sense.set_pixel(my_catcher.x_position, my_catcher.y_position, p)
+        sense.set_pixel(my_catcher.x_position, my_catcher.y_position, (20,20,20))
         sleep(1)
         my_berry = Berry()
     if my_berry.y_position == None:
