@@ -73,5 +73,5 @@ while True:
         sense.set_pixel(my_catcher.x_position, my_catcher.y_position, p)
         sleep(1)
         my_berry = Berry()
-    if berry.y_position == None:
+    if my_berry.y_position == None:
         my_berry = Berry() #make new berry after each one drops
