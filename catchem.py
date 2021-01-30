@@ -62,16 +62,16 @@ class Catcher:
             self.display(r) #make new position visible wherever we've moved
 
 
-berry = Berry()
-catcher = Catcher()
+my_berry = Berry()
+my_catcher = Catcher()
 #game loop
 while True:
-    catcher.run()
-    berry.run()
-    if berry.x_position == catcher.x_position and berry.y_position == catcher.y_position:
+    my_catcher.run()
+    my_berry.run()
+    if my_berry.x_position == my_catcher.x_position and my_berry.y_position == my_catcher.y_position:
         print("score!")
-        sense.set_pixel(catcher.x_position, catcher.y_position, p)
+        sense.set_pixel(my_catcher.x_position, my_catcher.y_position, p)
         sleep(1)
-        berry = Berry()
+        my_berry = Berry()
     if berry.y_position == None:
-        berry = Berry() #make new berry after each one drops
+        my_berry = Berry() #make new berry after each one drops
